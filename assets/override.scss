@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Latha;
+  src: url("fonts/Latha.ttf");
+}
+
+.navbar {
+  font-family: Latha, sans-serif;
+}
+
+.masthead {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%),
+  url("img/1.png") no-repeat center scroll;
+  h1 {
+    font-family: Latha, sans-serif;
+  }
+  img {
+    width: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    img {
+      width: 340px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .masthead {
+    img {
+      width: 510px;
+    }
+  }
+}
