@@ -13,8 +13,6 @@
     <link href="start_bootstrap/styles.css" rel="stylesheet"/>
     <!-- Hover -->
     <link href="hover/hover-min.css" rel="stylesheet"/>
-    <!-- Lightbox -->
-    <link href="lightbox/ekko-lightbox.css" rel="stylesheet"/>
     <!-- Styles -->
     <link href="assets/override.css" rel="stylesheet"/>
     <link href="assets/sections.css" rel="stylesheet"/>
@@ -31,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">Об игре</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Галерея</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallerey">Галерея</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">О разработке</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
             </ul>
@@ -85,16 +83,28 @@
     <div class="container px-4 px-lg-5">
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <img src="assets/img/2.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
-                <img src="assets/img/3.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                <a href="assets/img/2.png" data-fslightbox="screenshots">
+                    <img src="assets/img/2.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                </a>
+                <a href="assets/img/3.png" data-fslightbox="screenshots">
+                    <img src="assets/img/3.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                </a>
             </div>
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="assets/img/4.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
-                <img src="assets/img/5.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                <a href="assets/img/4.png" data-fslightbox="screenshots">
+                    <img src="assets/img/4.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                </a>
+                <a href="assets/img/5.png" data-fslightbox="screenshots">
+                    <img src="assets/img/5.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                </a>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="assets/img/6.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
-                <img src="assets/img/7.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                <a href="assets/img/6.png" data-fslightbox="screenshots">
+                    <img src="assets/img/6.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                </a>
+                <a href="assets/img/7.png" data-fslightbox="screenshots">
+                    <img src="assets/img/7.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                </a>
             </div>
         </div>
     </div>
@@ -106,12 +116,6 @@
 <!-- Core theme JS -->
 <script src="start_bootstrap/scripts.js"></script>
 <!-- Lightbox -->
-<script src="lightbox/ekko-lightbox.js"></script>
-<script>
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-</script>
+<script src="fslightbox/fslightbox.js"></script>
 </body>
 </html>
