@@ -191,19 +191,28 @@ body {
 }
 
 .gallerey-section {
-  padding: 10rem 0;
+  padding: 10rem 0 5rem;
 }
 .gallerey-section h2 {
   font-family: Din, sans-serif;
   font-weight: bold;
 }
 .gallerey-section img {
-  height: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
+@media (min-width: 992px) {
+  .gallerey-section img {
+    height: 600px;
+  }
+}
 .development-section {
-  padding: 10rem 0;
+  padding: 5rem 0 10rem;
+}
+.development-section h2 {
+  font-family: Din, sans-serif;
+  font-weight: bold;
 }
 .development-section .development-text {
   padding: 3rem;
@@ -227,6 +236,16 @@ body {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("img/11.png") no-repeat center scroll;
   background-size: cover;
+}
+.signup-section .btn {
+  color: white;
+  background-color: #64a19d;
+}
+.signup-section .btn:hover {
+  background-color: #558a87;
+}
+.signup-section .btn:active {
+  background-color: #467370;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
