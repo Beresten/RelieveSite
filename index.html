@@ -7,21 +7,17 @@
     часто называемом как &#34;Мир Агонии&#34;. Помогите им сбежать и попытайтесь облегчить судьбы тех, кто остался здесь навсегда" />
     <meta name="author" content="Team Relieve"/>
     <title>Relieve</title>
-    <!-- Icons library -->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="start_bootstrap/styles.css" rel="stylesheet"/>
-    <!-- Hover -->
-    <link href="hover/hover-min.css" rel="stylesheet"/>
-    <!-- Styles -->
-    <link href="assets/override.css" rel="stylesheet"/>
-    <link href="assets/sections.css" rel="stylesheet"/>
+
+    <!-- Font Awesome --><script src="fontawesome/all.js"></script>
+    <!-- Bootstrap --><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Styles --><link href="assets/styles.css" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
         <a class="navbar-brand text-uppercase" href="#page-top">Relieve</a>
-        <button class="navbar-toggler text-black-50 border-black" type="button"
+        <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -31,7 +27,7 @@
                 <li class="nav-item"><a class="nav-link" href="#about">Об игре</a></li>
                 <li class="nav-item"><a class="nav-link" href="#gallerey">Галерея</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">О разработке</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup">Контакты</a></li>
             </ul>
         </div>
     </div>
@@ -76,46 +72,135 @@
                 </p>
             </div>
         </div>
+        <div class="hand"></div>
     </div>
 </section>
 <!-- Gallerey -->
 <section class="gallerey-section bg-light" id="gallerey">
     <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center text-center mb-4">
+            <div class="col-lg-8">
+                <h2 class="text-black mb-4 text-uppercase">Скриншоты</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                 <a href="assets/img/2.png" data-fslightbox="screenshots">
-                    <img src="assets/img/2.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                    <img src="assets/img/2.png" class="float w-100 shadow-1-strong rounded mb-4" alt=""/>
                 </a>
                 <a href="assets/img/3.png" data-fslightbox="screenshots">
-                    <img src="assets/img/3.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                    <img src="assets/img/3.png" class="float w-100 shadow-1-strong rounded" alt=""/>
                 </a>
             </div>
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <a href="assets/img/4.png" data-fslightbox="screenshots">
-                    <img src="assets/img/4.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                    <img src="assets/img/4.png" class="float w-100 shadow-1-strong rounded mb-4" alt=""/>
                 </a>
                 <a href="assets/img/5.png" data-fslightbox="screenshots">
-                    <img src="assets/img/5.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                    <img src="assets/img/5.png" class="float w-100 shadow-1-strong rounded" alt=""/>
                 </a>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
                 <a href="assets/img/6.png" data-fslightbox="screenshots">
-                    <img src="assets/img/6.png" class="hvr-float w-100 shadow-1-strong rounded mb-4" alt=""/>
+                    <img src="assets/img/6.png" class="float w-100 shadow-1-strong rounded mb-4" alt=""/>
                 </a>
                 <a href="assets/img/7.png" data-fslightbox="screenshots">
-                    <img src="assets/img/7.png" class="hvr-float w-100 shadow-1-strong rounded" alt=""/>
+                    <img src="assets/img/7.png" class="float w-100 shadow-1-strong rounded" alt=""/>
                 </a>
             </div>
         </div>
     </div>
 </section>
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap core JS -->
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS -->
-<script src="start_bootstrap/scripts.js"></script>
-<!-- Lightbox -->
-<script src="fslightbox/fslightbox.js"></script>
+<!-- Development -->
+<!--<section class="development-section bg-light" id="develpment">-->
+<!--    <div class="container px-4 px-lg-5">-->
+<!--        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">-->
+<!--            <div class="col-lg-6">-->
+<!--                <img class="img-fluid" src="assets/img/dev1.jpg" alt="..." />-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
+<!--                <div class="bg-black text-center h-100 project">-->
+<!--                    <div class="d-flex h-100">-->
+<!--                        <div class="development-text w-100 my-auto text-center">-->
+<!--                            <h4 class="text-white">О разработке</h4>-->
+<!--                            <p class="mb-2 text-white-50">-->
+<!--                                В данный момент игра разрабатывается небольшой группой энтузиастов.-->
+<!--                            </p>-->
+<!--                            <p class="mb-2 text-white-50">-->
+<!--                                Проект взял начало в 2016 году и с тех пор прошёл через множество изменений.-->
+<!--                                Участники нашей группы выросли в профессиональном плане, но не забросили проект,-->
+<!--                                потому что мы действительно горим желанием его завершить, чтобы поделиться им с миром.-->
+<!--                            </p>-->
+<!--                            <p class="mb-2 text-white-50">-->
+<!--                                И однажды мы обязательно его закончим, а вы сможете его оценить по достоинству.-->
+<!--                            </p>-->
+<!--                            <p class="mb-0 text-white-50">-->
+<!--                                И помните, что мы можем создать Relieve вместе.-->
+<!--                            </p>-->
+<!--                            <hr class="d-none d-lg-block mb-0 ms-0" />-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row gx-0 justify-content-center">-->
+<!--            <div class="col-lg-6">-->
+<!--                <img class="img-fluid" src="assets/img/dev2.jpg" alt="..." />-->
+<!--            </div>-->
+<!--            <div class="col-lg-6 order-lg-first">-->
+<!--                <div class="bg-black text-center h-100 project">-->
+<!--                    <div class="d-flex h-100">-->
+<!--                        <div class="development-text w-100 my-auto text-center text-lg-right">-->
+<!--                            <h4 class="text-white">Если вы:</h4>-->
+<!--                            <ul class="mb-0 text-white-50">-->
+<!--                                <li>художник трёхмерных персонажей,</li>-->
+<!--                                <li>художник трёхмерного окружения,</li>-->
+<!--                                <li>аниматор персонажей,</li>-->
+<!--                                <li>разработчик UE4,</li>-->
+<!--                                <li>концепт-художник (окружения, персонажей, техники),-->
+<!--                                    и вы хотите присоединиться к нашей команде, напишите нам.</li>-->
+<!--                            </ul>-->
+<!--                            <hr class="d-none d-lg-block mb-0 me-0" />-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- Signup -->
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="fas fa-signature fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Будь в курсе событий!</h2>
+                <form class="form-signup d-flex flex-column flex-sm-row">
+                    <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail"
+                           type="email" placeholder="Укажите адресс почты.." />
+                    <button class="btn btn-primary" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact -->
+<section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+        <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="https://store.steampowered.com/app/1223770/Relieve/" target="_blank"><i class="fab fa-steam"></i></a>
+            <a class="mx-2" href="https://www.artstation.com/daemoon" target="_blank"><i class="fab fa-artstation"></i></a>
+            <a class="mx-2" href="https://vk.com/relieveme" target="_blank"><i class="fab fa-vk"></i></a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">Copyright &copy; Team Relieve 2021</div>
+</footer>
+<!-- jQuery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap JS --><script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Styles JS --><script src="assets/styles.js"></script>
+<!-- Lightbox --><script src="fslightbox/fslightbox.js"></script>
 </body>
 </html>
